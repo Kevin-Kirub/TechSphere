@@ -7,16 +7,16 @@
 
         header {
             display: flex;
-			align-items: flex-end;
-			background-color: white;
-			position: sticky; /* Make the header sticky */
+	    align-items: flex-end;
+            background-color: white;
+	    position: sticky; /* Make the header sticky */
             top: 0; /* Position it at the top of the viewport */
             padding: 0.8rem;
-			z-index: 1000; /* Ensure the header stays above other content */
+	    z-index: 1000; /* Ensure the header stays above other content */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-			width: 100%;
-			gap: 20px;
-		margin-bottom: 0;
+	    width: 100%;
+	    gap: 20px;
+            margin-bottom: 0;
         }
 
         .social-media {
@@ -44,23 +44,23 @@
             transition: opacity 0.5s ease; /* Smooth fade transition */
         }
 		
-		@keyframes blink {
+	@keyframes blink {
             50% {
                 border-color: transparent;
             }
         }
 
         nav {
-		    position: fixed; /* Fixed position */
+	    position: fixed; /* Fixed position */
             width: 100%; /* Full width */
             justify-content: center;
             background-color: #333;
-			display: flex;
-		margin-top: 0;
+	    display: flex;
+	    margin-top: 0;
         }
 
         nav a {
-		    position: sticky;
+	    position: sticky;
             padding: 14px 20px;
             display: block;
             color: white;
@@ -80,6 +80,7 @@
         h2 {
             text-align: center;
             color: #FF9800;
+	    margin-top: 0;
             font-size: 2.0rem; /* Increase the font size */
             font-weight: bold; /* Make the text bold */
             letter-spacing: 2px; /* Add letter spacing */
