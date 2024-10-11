@@ -11,7 +11,6 @@
             background-color: white;
 	    position: sticky; /* Make the header sticky */
             top: 0; /* Position it at the top of the viewport */
-            padding: 0.8rem;
 	    z-index: 1000; /* Ensure the header stays above other content */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 	    width: 100%;
