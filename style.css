@@ -1,1 +1,143 @@
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            display: flex;
+			align-items: flex-end;
+			background-color: white;
+			position: sticky; /* Make the header sticky */
+            top: 0; /* Position it at the top of the viewport */
+            padding: 0.8rem;
+			z-index: 1000; /* Ensure the header stays above other content */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+			width: 100%;
+			gap: 20px;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: flex-end; /* Align items to the bottom */
+            gap: 10px; /* Space between the GIF and social icons */
+            justify-content: flex-end; /* Align items horizontally to the right */
+        }
+
+        .social-icon {
+            width: 40px;  /* Set width of the social media icons */
+            height: 40px; /* Set height of the social media icons */
+            border-radius: 50%;
+        }
+
+        .typewriter {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem; /* Increase font size */
+            color: #FF5733; /* Eye-catching color */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+            overflow: hidden; /* Prevent overflow */
+            white-space: nowrap; /* Keep text in a single line */
+            animation: blink 0.75s step-end infinite; /* Cursor blink animation */
+            opacity: 0; /* Start invisible for fade effect */
+            transition: opacity 0.5s ease; /* Smooth fade transition */
+        }
+		
+		@keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        nav {
+		    position: fixed; /* Fixed position */
+            width: 100%; /* Full width */
+            justify-content: center;
+            background-color: #333;
+			display: flex;
+        }
+
+        nav a {
+		    position: sticky;
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF9800;
+            font-size: 2.0rem; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+            letter-spacing: 2px; /* Add letter spacing */
+            text-transform: uppercase; /* Convert text to uppercase */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+            margin-bottom: 20px; /* Add some spacing below the header */
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .item-details {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .item-details h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .item-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .contact h2 {
+            color: #333;
+        }
+
+        .contact p {
+            color: #666;
+        }
+</style>
