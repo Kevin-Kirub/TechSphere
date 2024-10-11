@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Marketing Website</title>
+	<link rel="stylesheet" href="style.css">
+  <script>
+        const phrases = [
+            "Welcome to TechSphere",
+            "Maximize Your Online Presence!",
+            "Your Success is Our Digital Mission!",
+            "Transforming Clicks into Customers!"
+        ];
+        let index = 0;
+
+        function typePhrase() {
+            const typewriterElement = document.querySelector('.typewriter');
+            typewriterElement.textContent = '';
+            let currentPhrase = phrases[index];
+
+            // Fade-in effect
+            typewriterElement.style.opacity = 0; // Start invisible
+            setTimeout(() => {
+                typewriterElement.style.opacity = 1; // Fade in
+            }, 0);
+
+            let i = 0;
+            const typingInterval = setInterval(() => {
+                if (i < currentPhrase.length) {
+                    typewriterElement.textContent += currentPhrase.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typingInterval);
+                    setTimeout(() => {
+                        typewriterElement.style.opacity = 0; // Fade out before next phrase
+                        setTimeout(() => {
+                            index = (index + 1) % phrases.length; // Cycle through phrases
+                            typePhrase(); // Call function again
+                        }, 500); // Wait for fade out
+                    }, 1000); // Wait before starting fade out
+                }
+            }, 97); // Adjust typing speed
+        }
+
+        window.onload = typePhrase; // Start typing on window load
+    </script>
+
+</head>
+<body>
+   <header>
+    <div class="header-content">
+        <img src="img\logo.png" style="width: 30%; height: auto;"><br>
+        <div class="typewriter"></div> <!-- Typewriter text -->
+    </div>
+	
+	<div class="header-content">
+        <img src="img\delivery.gif" alt="Animated GIF" style="max-height: 80px; width: auto; margin-left:180px;"> 
+	</div>
+	
+	<div class="social-media">
+	  <a href="https://www.facebook.com" target="_blank">
+		<img src="img\facebook.png" alt="Facebook" class="social-icon">
+	  </a>
+	  <a href="https://www.telegram.org" target="_blank">
+        <img src="img\telegram.png" alt="Telegram" class="social-icon">
+	  </a>
+    </div>
+    </header>
+	
+    <nav>
+        <a href="#consumer">Consumer Electronics</a>
+		<a href="#shoes">Shoes & Accessories</a>
+		<a href="#tools">Tools & Hardware</a>
+		<a href="#electrical">Electrical Equipments & Supplies</a>
+		<a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="consumer">
+        <h2>Consumer Electronics</h2>
+
+        <div class="item">
+            <img src="img\smart-watch.jpg" alt="Item 1">
+            <div class="item-details">
+                <h3>Product 1: Smart Watch</h3>
+                <p>Price: $199.99</p>
+                <p>Description: A sleek smart watch with health tracking and notifications. Stay connected and monitor your fitness goals with ease.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <div class="item-details">
+                <h3>Product 2: Wireless Headphones</h3>
+                <p>Price: $99.99</p>
+                <p>Description: Enjoy high-quality sound with noise-cancellation features and long battery life. Perfect for on-the-go listening.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <div class="item-details">
+                <h3>Product 3: Bluetooth Speaker</h3>
+                <p>Price: $59.99</p>
+                <p>Description: Portable Bluetooth speaker with superior sound quality. Ideal for both indoor and outdoor use.</p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container" id="shoes">
+        <h2>Shoes & Accessories</h2>
+
+        <div class="item">
+            <img src="img\smart-watch.jpg" alt="Item 1">
+            <div class="item-details">
+                <h3>Product 1: Smart Watch</h3>
+                <p>Price: $199.99</p>
+                <p>Description: A sleek smart watch with health tracking and notifications. Stay connected and monitor your fitness goals with ease.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <div class="item-details">
+                <h3>Product 2: Wireless Headphones</h3>
+                <p>Price: $99.99</p>
+                <p>Description: Enjoy high-quality sound with noise-cancellation features and long battery life. Perfect for on-the-go listening.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <div class="item-details">
+                <h3>Product 3: Bluetooth Speaker</h3>
+                <p>Price: $59.99</p>
+                <p>Description: Portable Bluetooth speaker with superior sound quality. Ideal for both indoor and outdoor use.</p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container" id="tools">
+        <h2>Tools & Hardware</h2>
+
+        <div class="item">
+            <img src="img\smart-watch.jpg" alt="Item 1">
+            <div class="item-details">
+                <h3>Product 1: Smart Watch</h3>
+                <p>Price: $199.99</p>
+                <p>Description: A sleek smart watch with health tracking and notifications. Stay connected and monitor your fitness goals with ease.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <div class="item-details">
+                <h3>Product 2: Wireless Headphones</h3>
+                <p>Price: $99.99</p>
+                <p>Description: Enjoy high-quality sound with noise-cancellation features and long battery life. Perfect for on-the-go listening.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <div class="item-details">
+                <h3>Product 3: Bluetooth Speaker</h3>
+                <p>Price: $59.99</p>
+                <p>Description: Portable Bluetooth speaker with superior sound quality. Ideal for both indoor and outdoor use.</p>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container" id="electrical">
+        <h2>Electrical Equipments & Supplies</h2>
+
+        <div class="item">
+            <img src="C:\Users\Kirubel.Lemma\Desktop\smart-watch.jpg" alt="Item 1">
+            <div class="item-details">
+                <h3>Product 1: Smart Watch</h3>
+                <p>Price: $199.99</p>
+                <p>Description: A sleek smart watch with health tracking and notifications. Stay connected and monitor your fitness goals with ease.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <div class="item-details">
+                <h3>Product 2: Wireless Headphones</h3>
+                <p>Price: $99.99</p>
+                <p>Description: Enjoy high-quality sound with noise-cancellation features and long battery life. Perfect for on-the-go listening.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <div class="item-details">
+                <h3>Product 3: Bluetooth Speaker</h3>
+                <p>Price: $59.99</p>
+                <p>Description: Portable Bluetooth speaker with superior sound quality. Ideal for both indoor and outdoor use.</p>
+            </div>
+        </div>
+    </div>
+    
+	<div class="container" id="security">
+        <h2>Security</h2>
+
+        <div class="item">
+            <img src="img\smart-watch.jpg" alt="Item 1">
+            <div class="item-details">
+                <h3>Product 1: Smart Watch</h3>
+                <p>Price: $199.99</p>
+                <p>Description: A sleek smart watch with health tracking and notifications. Stay connected and monitor your fitness goals with ease.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <div class="item-details">
+                <h3>Product 2: Wireless Headphones</h3>
+                <p>Price: $99.99</p>
+                <p>Description: Enjoy high-quality sound with noise-cancellation features and long battery life. Perfect for on-the-go listening.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <div class="item-details">
+                <h3>Product 3: Bluetooth Speaker</h3>
+                <p>Price: $59.99</p>
+                <p>Description: Portable Bluetooth speaker with superior sound quality. Ideal for both indoor and outdoor use.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@onlinemarketing.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Marketing Street, Business City, BC</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Marketing. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
